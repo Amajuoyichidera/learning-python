@@ -135,4 +135,113 @@ fruits = ['banana' , 'apple', 'oramge', 'paw paw']
 # print(fruits)
 
 
-# while loops
+# # while loops
+# counter = 0
+
+# while counter < 10 :
+#   print(counter)
+#   counter = counter + 1
+
+
+# # double number
+# def double_number(numbers):
+  
+#   result = []
+#   result.append(numbers * 2)
+#   return result
+
+#  # result = numbers * 2
+#  # return result         this approach also works
+
+
+# print(double_number(100))
+
+# # count word
+
+# def count_word(words):
+#   print(len(words.split()))
+
+# count_word('Hello David')
+
+
+# def sum_list(numbers):
+#   count = 0
+#   for number in numbers:
+#     count += number
+
+#   return count
+
+# print(sum_list([1, 2, 3]))
+# print(sum_list([1, 2, 3, 4]))
+
+
+
+# def find_max(numbers):
+#   current_max = numbers[0]
+#   for number in numbers:
+#     if number > current_max:
+#       current_max = number
+
+#   return current_max
+
+# print(find_max([1, 2, 3, 10, 17, 4, 5, 6]))
+
+
+# # dictionary practice
+# def word_frequency(phrase):
+#   result = {}
+#   words = phrase.split() 
+#   for word in words:
+#     if word not in result:
+#       result[word] = 1
+#     else:
+#       result[word] += 1
+#   return result
+
+# print(word_frequency(input('Enter words : ')))
+      
+  
+# Higher order functions
+# map
+# filter
+
+
+
+# list comprehensions
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+# filter and print even numbers
+print([number for number in numbers if number % 2 == 0])
+
+# map and double numbers
+print([number * 2 for number in numbers])
+
+# filter and print odd numbers
+print([number for number in numbers if number % 2 != 0])
+
+# filter and print odd numbers squared
+print([number ** 2 for number in numbers if number % 2 != 0])
+
+# filter and print odd numbers cubed
+print([number ** 3 for number in numbers if number % 2 != 0])
+
+# print maximum numbers
+def my_max():
+  num = input('enter numbers : ')
+  print(max(num))
+
+my_max()
+
+
+### SPECIAL BUILT-IN FUNCTIONS with Python ###
+# >>> sum([1, 2, 3])
+# 6
+# >>> len([1, 2, 3])
+# 3
+# >>> max([1, 2, 3])
+# 3
+# >>> max([1, 2, 3, 10, 5, 7])
+# 10
+# >>> min([1, 50, -7, 337])
+# -7
